@@ -138,7 +138,7 @@ final class GoogleMapController
 
     private void moveCamera(CameraUpdate cameraUpdate) {
         Log.e(TAG, "moveCamera: " + cameraUpdate.toString());
-        googleMap.animateCamera(cameraUpdate, 2000, new GoogleMap.CancelableCallback() {
+        googleMap.animateCamera(cameraUpdate, 1000, new GoogleMap.CancelableCallback() {
             @Override
             public void onCancel() {
                 Log.e("TAG", "onCancel: ");
@@ -153,7 +153,7 @@ final class GoogleMapController
 
     private void animateCamera(CameraUpdate cameraUpdate) {
         Log.e(TAG, "animateCamera: " + cameraUpdate.toString());
-        googleMap.animateCamera(cameraUpdate, 2000, new GoogleMap.CancelableCallback() {
+        googleMap.animateCamera(cameraUpdate, 1000, new GoogleMap.CancelableCallback() {
             @Override
             public void onCancel() {
                 Log.e("TAG", "onCancel: ");
